@@ -3,10 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		335AB6E348190115C00C45A6 /* Pods_CoVStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8370CFDF70DBE46308B8773E /* Pods_CoVStats.framework */; };
+		F441A63224F1B0D9002548F0 /* CovidFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A63124F1B0D9002548F0 /* CovidFetchRequest.swift */; };
+		F441A63424F27FFB002548F0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A63324F27FFB002548F0 /* Model.swift */; };
+		F441A63724F3A207002548F0 /* RecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A63624F3A207002548F0 /* RecentView.swift */; };
+		F441A63924F3A44C002548F0 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A63824F3A44C002548F0 /* ListHeaderView.swift */; };
+		F441A63B24F3A6CA002548F0 /* CountryDataRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A63A24F3A6CA002548F0 /* CountryDataRowView.swift */; };
+		F441A63F24F4399A002548F0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A63E24F4399A002548F0 /* Extension.swift */; };
+		F441A64324F45EE0002548F0 /* TotalDataCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A64224F45EE0002548F0 /* TotalDataCard.swift */; };
+		F441A64524F4685E002548F0 /* TotalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A64424F4685E002548F0 /* TotalDataView.swift */; };
+		F441A64724F4EA9B002548F0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A64624F4EA9B002548F0 /* SearchView.swift */; };
+		F441A64924F4F086002548F0 /* CountryDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A64824F4F086002548F0 /* CountryDetailRow.swift */; };
+		F441A64B24F4F09E002548F0 /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A64A24F4F09E002548F0 /* CountryDetailView.swift */; };
+		F441A64D24F54864002548F0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A64C24F54864002548F0 /* MapView.swift */; };
+		F441A64F24F5A82C002548F0 /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A64E24F5A82C002548F0 /* MapContainerView.swift */; };
+		F441A65124F6F7CF002548F0 /* CountryStatisticsFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A65024F6F7CF002548F0 /* CountryStatisticsFetchRequest.swift */; };
+		F474F2DA24FAF85E00BF88C8 /* CountryStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474F2D924FAF85E00BF88C8 /* CountryStatistics.swift */; };
 		F4891D2924F1A369004793D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4891D2824F1A369004793D6 /* AppDelegate.swift */; };
 		F4891D2B24F1A369004793D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4891D2A24F1A369004793D6 /* SceneDelegate.swift */; };
 		F4891D2E24F1A369004793D6 /* CoVStats.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4891D2C24F1A369004793D6 /* CoVStats.xcdatamodeld */; };
@@ -17,6 +33,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4387985F393BAB62C342AA82 /* Pods-CoVStats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoVStats.release.xcconfig"; path = "Target Support Files/Pods-CoVStats/Pods-CoVStats.release.xcconfig"; sourceTree = "<group>"; };
+		8370CFDF70DBE46308B8773E /* Pods_CoVStats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoVStats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94424AC293E7C752DAF44548 /* Pods-CoVStats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoVStats.debug.xcconfig"; path = "Target Support Files/Pods-CoVStats/Pods-CoVStats.debug.xcconfig"; sourceTree = "<group>"; };
+		F441A63124F1B0D9002548F0 /* CovidFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidFetchRequest.swift; sourceTree = "<group>"; };
+		F441A63324F27FFB002548F0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F441A63624F3A207002548F0 /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
+		F441A63824F3A44C002548F0 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
+		F441A63A24F3A6CA002548F0 /* CountryDataRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataRowView.swift; sourceTree = "<group>"; };
+		F441A63E24F4399A002548F0 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F441A64224F45EE0002548F0 /* TotalDataCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataCard.swift; sourceTree = "<group>"; };
+		F441A64424F4685E002548F0 /* TotalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataView.swift; sourceTree = "<group>"; };
+		F441A64624F4EA9B002548F0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		F441A64824F4F086002548F0 /* CountryDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailRow.swift; sourceTree = "<group>"; };
+		F441A64A24F4F09E002548F0 /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		F441A64C24F54864002548F0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F441A64E24F5A82C002548F0 /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
+		F441A65024F6F7CF002548F0 /* CountryStatisticsFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatisticsFetchRequest.swift; sourceTree = "<group>"; };
+		F474F2D924FAF85E00BF88C8 /* CountryStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatistics.swift; sourceTree = "<group>"; };
 		F4891D2524F1A369004793D6 /* CoVStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoVStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4891D2824F1A369004793D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4891D2A24F1A369004793D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +67,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335AB6E348190115C00C45A6 /* Pods_CoVStats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4834682555D4C42096A1C83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94424AC293E7C752DAF44548 /* Pods-CoVStats.debug.xcconfig */,
+				4387985F393BAB62C342AA82 /* Pods-CoVStats.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F27501CB5C9BE156E035F5D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8370CFDF70DBE46308B8773E /* Pods_CoVStats.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F441A63524F3A1AD002548F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F441A63124F1B0D9002548F0 /* CovidFetchRequest.swift */,
+				F441A65024F6F7CF002548F0 /* CountryStatisticsFetchRequest.swift */,
+				F441A63324F27FFB002548F0 /* Model.swift */,
+				F474F2D924FAF85E00BF88C8 /* CountryStatistics.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F441A64024F45E96002548F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F441A63824F3A44C002548F0 /* ListHeaderView.swift */,
+				F441A64624F4EA9B002548F0 /* SearchView.swift */,
+				F441A64224F45EE0002548F0 /* TotalDataCard.swift */,
+				F441A64424F4685E002548F0 /* TotalDataView.swift */,
+				F441A63A24F3A6CA002548F0 /* CountryDataRowView.swift */,
+				F441A64824F4F086002548F0 /* CountryDetailRow.swift */,
+				F441A64C24F54864002548F0 /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F441A64124F45EAF002548F0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F441A63E24F4399A002548F0 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F4891D1C24F1A369004793D6 = {
 			isa = PBXGroup;
 			children = (
 				F4891D2724F1A369004793D6 /* CoVStats */,
 				F4891D2624F1A369004793D6 /* Products */,
+				B4834682555D4C42096A1C83 /* Pods */,
+				F27501CB5C9BE156E035F5D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +145,20 @@
 		F4891D2724F1A369004793D6 /* CoVStats */ = {
 			isa = PBXGroup;
 			children = (
+				F441A63524F3A1AD002548F0 /* Models */,
 				F4891D2824F1A369004793D6 /* AppDelegate.swift */,
 				F4891D2A24F1A369004793D6 /* SceneDelegate.swift */,
 				F4891D2F24F1A369004793D6 /* ContentView.swift */,
+				F441A63624F3A207002548F0 /* RecentView.swift */,
+				F441A64A24F4F09E002548F0 /* CountryDetailView.swift */,
+				F441A64E24F5A82C002548F0 /* MapContainerView.swift */,
+				F441A64024F45E96002548F0 /* Views */,
 				F4891D3124F1A36B004793D6 /* Assets.xcassets */,
 				F4891D3624F1A36B004793D6 /* LaunchScreen.storyboard */,
 				F4891D3924F1A36B004793D6 /* Info.plist */,
 				F4891D2C24F1A369004793D6 /* CoVStats.xcdatamodeld */,
 				F4891D3324F1A36B004793D6 /* Preview Content */,
+				F441A64124F45EAF002548F0 /* Extension */,
 			);
 			path = CoVStats;
 			sourceTree = "<group>";
@@ -85,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4891D3C24F1A36B004793D6 /* Build configuration list for PBXNativeTarget "CoVStats" */;
 			buildPhases = (
+				62C3FBD03B1FDC9E3984E710 /* [CP] Check Pods Manifest.lock */,
 				F4891D2124F1A369004793D6 /* Sources */,
 				F4891D2224F1A369004793D6 /* Frameworks */,
 				F4891D2324F1A369004793D6 /* Resources */,
+				88D3F15065AB00B17F66220E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,15 +239,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62C3FBD03B1FDC9E3984E710 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoVStats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88D3F15065AB00B17F66220E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoVStats/Pods-CoVStats-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoVStats/Pods-CoVStats-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoVStats/Pods-CoVStats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4891D2124F1A369004793D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F441A65124F6F7CF002548F0 /* CountryStatisticsFetchRequest.swift in Sources */,
+				F441A64924F4F086002548F0 /* CountryDetailRow.swift in Sources */,
+				F441A64D24F54864002548F0 /* MapView.swift in Sources */,
+				F441A63224F1B0D9002548F0 /* CovidFetchRequest.swift in Sources */,
 				F4891D2924F1A369004793D6 /* AppDelegate.swift in Sources */,
 				F4891D2E24F1A369004793D6 /* CoVStats.xcdatamodeld in Sources */,
+				F441A63424F27FFB002548F0 /* Model.swift in Sources */,
 				F4891D3024F1A369004793D6 /* ContentView.swift in Sources */,
+				F474F2DA24FAF85E00BF88C8 /* CountryStatistics.swift in Sources */,
+				F441A63F24F4399A002548F0 /* Extension.swift in Sources */,
+				F441A63724F3A207002548F0 /* RecentView.swift in Sources */,
 				F4891D2B24F1A369004793D6 /* SceneDelegate.swift in Sources */,
+				F441A64B24F4F09E002548F0 /* CountryDetailView.swift in Sources */,
+				F441A64F24F5A82C002548F0 /* MapContainerView.swift in Sources */,
+				F441A63924F3A44C002548F0 /* ListHeaderView.swift in Sources */,
+				F441A64724F4EA9B002548F0 /* SearchView.swift in Sources */,
+				F441A64324F45EE0002548F0 /* TotalDataCard.swift in Sources */,
+				F441A63B24F3A6CA002548F0 /* CountryDataRowView.swift in Sources */,
+				F441A64524F4685E002548F0 /* TotalDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +438,7 @@
 		};
 		F4891D3D24F1A36B004793D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94424AC293E7C752DAF44548 /* Pods-CoVStats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +459,7 @@
 		};
 		F4891D3E24F1A36B004793D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4387985F393BAB62C342AA82 /* Pods-CoVStats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
