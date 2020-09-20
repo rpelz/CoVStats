@@ -72,5 +72,5 @@ struct CountryLocation {
 }
 
 let testTotalData = TotalData(confirmed: 200, critical: 100, deaths: 20, recovered: 50)
-let testCountryData = CountryData(country: "Test", confirmed: 500, critical: 300, deaths: 200, recovered: 100, longitude: 0.0, latitude: 0.0)
+let testCountryData = CountryData(country: "Test", confirmed: 5000000, critical: 300, deaths: 200, recovered: 100, longitude: 0.0, latitude: 0.0)
 let testCountryLocation = CountryLocation(name: "Austria", alpha2code: "AT", alpha3code: "AUT", latitude: 14.550072, longitude: 47.516231)

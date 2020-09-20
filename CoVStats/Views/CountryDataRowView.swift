@@ -18,7 +18,7 @@ struct CountryDataRowView: View {
                 .fontWeight(.medium)
                 .font(.subheadline)
                 .lineLimit(2)
-                .frame(width: 100, alignment: .leading)
+                .frame(width: 88, alignment: .leading)
             
             Spacer()
             
@@ -34,7 +34,7 @@ struct CountryDataRowView: View {
             Text(countryData.deaths.formatNumber())
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-                .frame(width: 55, height: 40, alignment: .center)
+                .frame(width: 50, height: 40, alignment: .center)
                 .font(.subheadline)
                 .foregroundColor(.red)
             
@@ -43,7 +43,7 @@ struct CountryDataRowView: View {
             Text(countryData.recovered.formatNumber())
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-                .frame(width: 65, height: 40, alignment: .center)
+                .frame(width: 60, height: 40, alignment: .center)
                 .font(.subheadline)
                 .foregroundColor(.green)
         }
