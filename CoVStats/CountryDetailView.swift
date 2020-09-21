@@ -11,50 +11,71 @@ import SwiftUI
 struct CountryDetailView: View {
     
     var countryName: String
+    var showCloseButton = false
+    
+    @Environment(\.presentationMode) var presentationMode
     
     @ObservedObject var countryStatisticsRequest = CountryStatisticsFetchRequest()
     
     var body: some View {
-        VStack {
-            VStack {
-                CountryDetailRow(number: countryStatisticsRequest.detailedCountryData?.confirmedCases.formatNumber() ?? "Err", name: "Confirmed")
-                    .padding(.top)
+        VStack (alignment: .trailing) {
+            if (showCloseButton) {
+                HStack {
+                    Text(countryName)
+                        .font(.title)
+                        //.bold()
+                        .padding(.top, 4)
+                    Spacer()
+                    CloseButton()
+                        .onTapGesture {
+                            presentationMode.wrappedValue.dismiss()
+                    }
+                }
+                .padding(.horizontal, 16)
+                .padding(.top, 16)
+            }
+            ScrollView {
                 
-                CountryDetailRow(number: countryStatisticsRequest.detailedCountryData?.activeCases.formatNumber() ?? "Err", name: "Active Cases", color: .orange)
+                VStack {
+                    CountryDetailRow(number: countryStatisticsRequest.detailedCountryData?.confirmedCases.formatNumber() ?? "Err", name: "Confirmed")
+                        .padding(.top)
+                    
+                    CountryDetailRow(number: countryStatisticsRequest.detailedCountryData?.activeCases.formatNumber() ?? "Err", name: "Active Cases", color: .orange)
+                    
+                    CountryDetailRow(number: "+" + (countryStatisticsRequest.detailedCountryData?.newCases.formatNumber() ?? "Err"), name: "New Cases", color: .orange)
+                    
+                    CountryDetailRow(number:  countryStatisticsRequest.detailedCountryData?.recoveredCases.formatNumber() ?? "Err", name: "Recovered Cases", color: .green)
+                    
+                    CountryDetailRow(number: String(format: "%.2f", countryStatisticsRequest.detailedCountryData?.revoveredRate ?? 0.0) + "%", name: "Recovery Rate", color: .green)
+                    
+                    CountryDetailRow(number: countryStatisticsRequest.detailedCountryData?.testsDone.formatNumber() ?? "Err", name: "Tests Done", color: .blue)
+                }// End of VStack
+                .background(Color("cardBackgroundGray"))
+                .cornerRadius(8)
+                .padding(.horizontal, 16)
                 
-                CountryDetailRow(number: "+" + (countryStatisticsRequest.detailedCountryData?.newCases.formatNumber() ?? "Err"), name: "New Cases", color: .orange)
-                
-                CountryDetailRow(number:  countryStatisticsRequest.detailedCountryData?.recoveredCases.formatNumber() ?? "Err", name: "Recovered Cases", color: .green)
-                
-                CountryDetailRow(number: String(format: "%.2f", countryStatisticsRequest.detailedCountryData?.revoveredRate ?? 0.0) + "%", name: "Recovery Rate", color: .green)
-                
-                CountryDetailRow(number: countryStatisticsRequest.detailedCountryData?.testsDone.formatNumber() ?? "Err", name: "Tests Done", color: .blue)
-            }// End of VStack
-            .background(Color("cardBackgroundGray"))
-            .cornerRadius(8)
-            .padding()
-            
-            VStack {
-                CountryDetailRow(number:  countryStatisticsRequest.detailedCountryData?.criticalCases.formatNumber() ?? "Err", name: "Critical Cases", color: .orange)
-                    .padding(.top)  
-                
-                CountryDetailRow(number:  countryStatisticsRequest.detailedCountryData?.deaths.formatNumber() ?? "Err", name: "Deaths", color: .red)
-                
-                CountryDetailRow(number: "+" + (countryStatisticsRequest.detailedCountryData?.newDeaths.formatNumber() ?? "Err"), name: "New Deaths", color: .red)
-                
-                CountryDetailRow(number: String(format: "%.2f", countryStatisticsRequest.detailedCountryData?.fatalityRate ?? 0.0) + "%", name: "Fatality Rate", color: .red)
+                VStack {
+                    CountryDetailRow(number:  countryStatisticsRequest.detailedCountryData?.criticalCases.formatNumber() ?? "Err", name: "Critical Cases", color: .orange)
+                        .padding(.top)
+                    
+                    CountryDetailRow(number:  countryStatisticsRequest.detailedCountryData?.deaths.formatNumber() ?? "Err", name: "Deaths", color: .red)
+                    
+                    CountryDetailRow(number: "+" + (countryStatisticsRequest.detailedCountryData?.newDeaths.formatNumber() ?? "Err"), name: "New Deaths", color: .red)
+                    
+                    CountryDetailRow(number: String(format: "%.2f", countryStatisticsRequest.detailedCountryData?.fatalityRate ?? 0.0) + "%", name: "Fatality Rate", color: .red)
 
+                }// End of VStack
+                .background(Color("cardBackgroundGray"))
+                .cornerRadius(8)
+                .padding()
+                
+                Spacer()
             }// End of VStack
-            .background(Color("cardBackgroundGray"))
-            .cornerRadius(8)
-            .padding()
-            
-            Spacer()
-        }// End of VStack
-        .padding(.top, 25)
-        .navigationBarTitle(countryName)
-        .onAppear() {
-            self.getStatistics()
+            .padding(.top, 25)
+            .navigationBarTitle(countryName)
+            .onAppear() {
+                self.getStatistics()
+            }
         }
     }
     

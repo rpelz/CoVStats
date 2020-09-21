@@ -12,11 +12,19 @@ struct MapContainerView: View {
     
     @ObservedObject var covidFetch = CovidFetchRequest()
     @ObservedObject var countryStatistics = CountryStatistics()
+    @EnvironmentObject var selectedCountry: SelectedCountry
+    @State var showModal = false
     
     //MapView(countryData: $covidFetch.allCountries, countryLocationData: $covidFetch.listOfCountries)
     var body: some View {
         
         MapView(countryData: $covidFetch.allCountries, countryLocationData: $countryStatistics.listOfCountries)
+            .sheet(isPresented: $selectedCountry.showCountryDetail) {
+                CountryDetailView(countryName: selectedCountry.country, showCloseButton: true)
+            }
+            /*.onTapGesture {
+                showModal = true;
+            }*/
         }
     }
 

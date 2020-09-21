@@ -22,6 +22,8 @@
 		F441A64D24F54864002548F0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A64C24F54864002548F0 /* MapView.swift */; };
 		F441A64F24F5A82C002548F0 /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A64E24F5A82C002548F0 /* MapContainerView.swift */; };
 		F441A65124F6F7CF002548F0 /* CountryStatisticsFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441A65024F6F7CF002548F0 /* CountryStatisticsFetchRequest.swift */; };
+		F472BF592517F89F00DFD790 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472BF582517F89F00DFD790 /* CloseButton.swift */; };
+		F472BF5C2517FE5F00DFD790 /* SelectedCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472BF5B2517FE5F00DFD790 /* SelectedCountry.swift */; };
 		F474F2DA24FAF85E00BF88C8 /* CountryStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474F2D924FAF85E00BF88C8 /* CountryStatistics.swift */; };
 		F4891D2924F1A369004793D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4891D2824F1A369004793D6 /* AppDelegate.swift */; };
 		F4891D2B24F1A369004793D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4891D2A24F1A369004793D6 /* SceneDelegate.swift */; };
@@ -50,6 +52,8 @@
 		F441A64C24F54864002548F0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F441A64E24F5A82C002548F0 /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
 		F441A65024F6F7CF002548F0 /* CountryStatisticsFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatisticsFetchRequest.swift; sourceTree = "<group>"; };
+		F472BF582517F89F00DFD790 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		F472BF5B2517FE5F00DFD790 /* SelectedCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCountry.swift; sourceTree = "<group>"; };
 		F474F2D924FAF85E00BF88C8 /* CountryStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatistics.swift; sourceTree = "<group>"; };
 		F4891D2524F1A369004793D6 /* CoVStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoVStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4891D2824F1A369004793D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 				F441A65024F6F7CF002548F0 /* CountryStatisticsFetchRequest.swift */,
 				F441A63324F27FFB002548F0 /* Model.swift */,
 				F474F2D924FAF85E00BF88C8 /* CountryStatistics.swift */,
+				F472BF5B2517FE5F00DFD790 /* SelectedCountry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				F441A63824F3A44C002548F0 /* ListHeaderView.swift */,
+				F472BF582517F89F00DFD790 /* CloseButton.swift */,
 				F441A64624F4EA9B002548F0 /* SearchView.swift */,
 				F441A64224F45EE0002548F0 /* TotalDataCard.swift */,
 				F441A64424F4685E002548F0 /* TotalDataView.swift */,
@@ -296,11 +302,13 @@
 				F4891D3024F1A369004793D6 /* ContentView.swift in Sources */,
 				F474F2DA24FAF85E00BF88C8 /* CountryStatistics.swift in Sources */,
 				F441A63F24F4399A002548F0 /* Extension.swift in Sources */,
+				F472BF592517F89F00DFD790 /* CloseButton.swift in Sources */,
 				F441A63724F3A207002548F0 /* RecentView.swift in Sources */,
 				F4891D2B24F1A369004793D6 /* SceneDelegate.swift in Sources */,
 				F441A64B24F4F09E002548F0 /* CountryDetailView.swift in Sources */,
 				F441A64F24F5A82C002548F0 /* MapContainerView.swift in Sources */,
 				F441A63924F3A44C002548F0 /* ListHeaderView.swift in Sources */,
+				F472BF5C2517FE5F00DFD790 /* SelectedCountry.swift in Sources */,
 				F441A64724F4EA9B002548F0 /* SearchView.swift in Sources */,
 				F441A64324F45EE0002548F0 /* TotalDataCard.swift in Sources */,
 				F441A63B24F3A6CA002548F0 /* CountryDataRowView.swift in Sources */,

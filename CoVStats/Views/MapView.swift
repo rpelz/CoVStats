@@ -13,6 +13,7 @@ import MapKit
 struct MapView: UIViewRepresentable {
     @Binding var countryData: [CountryData]
     @Binding var countryLocationData: [CountryLocation]
+    @EnvironmentObject var selectedCountry: SelectedCountry
     
     func makeUIView(context: UIViewRepresentableContext<MapView>) -> MKMapView {
         return MKMapView();
@@ -116,5 +117,7 @@ class MapViewCoordinator: NSObject, MKMapViewDelegate {
         }
         
         print("Touched: country: \(annotation.country ?? "No title")")
+        mapViewController.selectedCountry.country = annotation.country ?? "Europe"
+        mapViewController.selectedCountry.showCountryDetail = true
     }
 }
